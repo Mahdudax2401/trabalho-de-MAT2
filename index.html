@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz de Tipos de Luta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="overlay"></div>
+    <h1>Quiz de Tipos de Luta</h1>
+    <div class="container">
+        <div class="flashcard" id="flashcard">
+            <div class="front">
+                <h2 id="question">Carregando...</h2>
+            </div>
+            <div class="back">
+                <p id="answer">Resposta correta: </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="options">
+        <button class="option" onclick="checkAnswer(0)">Opção 1</button>
+        <button class="option" onclick="checkAnswer(1)">Opção 2</button>
+        <button class="option" onclick="checkAnswer(2)">Opção 3</button>
+        <button class="option" onclick="checkAnswer(3)">Opção 4</button>
+    </div>
+    
+    <p id="result"></p>
+    <button id="next-btn" onclick="nextQuestion()">Próxima Pergunta</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
